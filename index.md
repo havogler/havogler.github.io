@@ -6,10 +6,10 @@ layout: default
 
 # Hello!
 
-This is my personal website, where I'll post about cool things I'm working on and personal updates!
+I love cities and everything that make them function, especially public transportation and housing. I am always trying to learn more about public transportation, bicycle infrastructure, and zoning and land use policies and their impacts.
 
-[Link to another page](./another-page.html).
+This is my personal website, where I'll post about cool stuff I'm working on and personal updates! Here are some things I've looked into recently:
 
-[Covid Impact on San Diego Rail Ridership](./another-page.html).
+[Covid Impact on San Diego Rail Ridership](./CovidRidership.html).
 
-[Copper Line Ridership Impact Estimate](./another-page.html).
+[Copper Line Ridership Impact Estimate](./MTS_Copper_Line_Transfer_Estimate.html).
