@@ -5,7 +5,10 @@ layout: default
 
 # About Me
 
-Hello! My name is Alex Vogler, and I currently work for Acumen, where I ...
+Hello! 
+My name is Alex Vogler, and I currently work for Acumen as a data and policy analyst, where I look for potentially fraudulent behavior by Medicaid providers.
+Previously, I obtained my Masters in Physics at UC Davis, where I conducted research on galaxy composition.
+I'm also a UC Irvine alumnus.
 
 # Interests
 
