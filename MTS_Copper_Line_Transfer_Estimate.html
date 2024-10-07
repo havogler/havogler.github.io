@@ -14590,7 +14590,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Read in ridership data from SANDAG open data portal as pandas dataframe</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14598,24 +14610,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Read in SANDAG ridership data as pandas dataframe</span>
-<span class="n">ridership</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Downloads/SOC_-_Transit_Ridership_by_Route___Stop__SANDAG__20240520.csv&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Look at first few entries</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ridership</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Downloads/SOC_-_Transit_Ridership_by_Route___Stop__SANDAG__20240520.csv&quot;</span><span class="p">)</span>
+<span class="c1"># Look at first few entries</span>
 <span class="n">ridership</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
@@ -14634,7 +14630,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 
 
 
@@ -14818,16 +14814,27 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>I need to see how the route names are written in this dataset so that I can filter to the Orange and Green Lines</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get rail route names so I can filter to Orange and Green Lines</span>
-<span class="n">ridership</span><span class="p">[</span><span class="n">ridership</span><span class="p">[</span><span class="s2">&quot;SERVICE_MODE&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;Rail&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">ROUTE_NAME</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ridership</span><span class="p">[</span><span class="n">ridership</span><span class="p">[</span><span class="s2">&quot;SERVICE_MODE&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;Rail&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">ROUTE_NAME</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14845,7 +14852,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
 
@@ -14861,16 +14868,27 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Restrict to Orange and Green Lines so that I can look at the impact of the Copper Line</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Restrict to Orange and Green Lines in order to look at impacts of Copper Line</span>
-<span class="n">grn_org</span> <span class="o">=</span> <span class="n">ridership</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;ROUTE_NAME == &quot;Orange Line Trolley&quot; or ROUTE_NAME == &quot;Green Line Trolley&quot;&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">grn_org</span> <span class="o">=</span> <span class="n">ridership</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;ROUTE_NAME == &quot;Orange Line Trolley&quot; or ROUTE_NAME == &quot;Green Line Trolley&quot;&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14878,16 +14896,27 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Get all stop names along Green and Orange Lines</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get all stop names along Green and Orange Lines</span>
-<span class="n">grn_org</span><span class="o">.</span><span class="n">STOP</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">grn_org</span><span class="o">.</span><span class="n">STOP</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14905,7 +14934,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
 
 
@@ -14940,21 +14969,27 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>According to the MTS announcement of the Copper Line, "Approximately 8% of current riders on the Orange and Green Lines are expected to be required to make a transfer to the Copper Line, if approved." To test this, I will calculate the total number of passengers that get off Orange and Green Line trains heading East at Arnele Avenue, Gillespie Field, or Santee. These are most likely passengers that boarded before El Cajon and thus would need to transfer (unless they are taking a short trip).</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># &quot;Approximately 8% of current riders on the Orange and Green Lines are expected to be required to </span>
-<span class="c1"># make a transfer to the Copper Line, if approved&quot; according to MTS</span>
-
-<span class="c1"># Calculate total number of passengers that get off Orange and Green Lines heading East at </span>
-<span class="c1"># Arnele Avenue, Gillespie Field, or Santee. These are most likely passengers that boarded </span>
-<span class="c1"># before El Cajon and thus would need to transfer (unless they are taking a short trip)</span>
-<span class="n">bronze_alights</span> <span class="o">=</span> <span class="n">grn_org</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;(STOP == &quot;Arnele Avenue Station&quot; or STOP == &quot;Gillespie Field Station&quot; </span><span class="se">\</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bronze_alights</span> <span class="o">=</span> <span class="n">grn_org</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;(STOP == &quot;Arnele Avenue Station&quot; or STOP == &quot;Gillespie Field Station&quot; </span><span class="se">\</span>
 <span class="s1">            or STOP == &quot;Santee Town Center Station&quot;) and DIRECTION_NAME == &quot;East&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">SUM_PASSENGERS_OFF</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
 
@@ -14963,32 +14998,29 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate total number of passengers getting off at any station heading East on Orange and Green Lines</span>
-<span class="n">grn_org_bronze_alights</span> <span class="o">=</span> <span class="n">grn_org</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;DIRECTION_NAME == &quot;East&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">SUM_PASSENGERS_OFF</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>This can be divided by the total number of passengers exiting all stations going East on the Orange and Green Lines, in order to find the percentage that would need to transfer onto the Copper Line.</p>
 
-     </div>
 </div>
 </div>
 </div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate percentage of riders</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate total number of passengers getting off at any station heading East on Orange and Green Lines</span>
+<span class="n">grn_org_bronze_alights</span> <span class="o">=</span> <span class="n">grn_org</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;DIRECTION_NAME == &quot;East&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">SUM_PASSENGERS_OFF</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="c1"># Calculate percentage of riders</span>
 <span class="n">bronze_alights</span> <span class="o">/</span> <span class="n">grn_org_bronze_alights</span>
 </pre></div>
 
@@ -15007,7 +15039,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
@@ -15022,101 +15054,18 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># So my estimate agrees with the MTS estimate</span>
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>So about 8% of existing Orange and Green Line Riders would need to transfer to the Copper Line. This agrees with the MTS estimate. This could be an overestimate, since it includes all passengers that boarded at El Cajon or later, some of which might not be transferring and instead taking a short trip. But for this purpose it ought to be sufficient (better to overestimate when quoting a percentage of riders that will be affected by a change).</p>
 
-     </div>
 </div>
 </div>
 </div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can use boarding numbers to improve my estimate by excluding riders that are boarding on El Cajon </span>
-<span class="c1"># or after in the numerator, since these riders will board the Bronze line, not Orange or Green, and thus </span>
-<span class="c1"># not require a transfer</span>
-<span class="n">bronze_boards</span> <span class="o">=</span> <span class="n">grn_org</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;(STOP == &quot;Arnele Avenue Station&quot; or STOP == &quot;Arnele Avenue Station&quot; </span><span class="se">\</span>
-<span class="s1">            or STOP == &quot;Gillespie Field Station&quot; or STOP == &quot;Santee Town Center Station&quot;) </span><span class="se">\</span>
-<span class="s1">            and DIRECTION_NAME == &quot;East&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">SUM_PASSENGERS_ON</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate new percentage</span>
-<span class="p">(</span><span class="n">bronze_alights</span> <span class="o">-</span> <span class="n">bronze_boards</span><span class="p">)</span> <span class="o">/</span> <span class="n">grn_org_bronze_alights</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>0.07343855709206745</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Note that this is the percentage of trips that will require a transfer, not the number of riders per se</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 </body>
 
