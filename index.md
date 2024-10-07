@@ -17,6 +17,6 @@ I am always trying to learn more about public transportation, bicycle infrastruc
 
 # Blogs
 
-- [Covid Impact on San Diego Rail Ridership](./CovidRidership.html). - I looked at the impact of Covid on rail ridership (MTS trolley lines, COASTER, and SPRINTER) using ridership data from the SANDAG open data portal covering the years 2019-2022. Some lines were hit harder than others, and recovery rates in 2021 and 2022 differ substantially.
+- [Covid Impact on San Diego Rail Ridership](./CovidRidership.html) - I looked at the impact of Covid on rail ridership (MTS trolley lines, COASTER, and SPRINTER) using ridership data from the SANDAG open data portal covering the years 2019-2022. Some lines were hit harder than others, and recovery rates in 2021 and 2022 differ substantially.
 
-- [Copper Line Ridership Impact Estimate](./MTS_Copper_Line_Transfer_Estimate.html). - MTS estimates that about 8% of Orange and Green Line riders will be impacted by the opening of the Copper Line. I try to replicate this number using SANDAG open data portal ridership data.
+- [Copper Line Ridership Impact Estimate](./MTS_Copper_Line_Transfer_Estimate.html) - MTS estimates that about 8% of Orange and Green Line riders will be impacted by the opening of the Copper Line. I try to replicate this number using SANDAG open data portal ridership data.
